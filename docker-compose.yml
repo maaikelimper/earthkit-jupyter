@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  jupyter:
+    container_name: earthkit-jupyter
+    build:
+      context: .
+    ports:
+      - 8888:8888
+    environment:
+      JUPYTER_TOKEN: ${JUPYTER_TOKEN:-mysecrettoken"}
+    volumes:
+      - ./notebooks:/root/notebooks:rw
