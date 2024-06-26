@@ -7,7 +7,7 @@ The repository contains the docker and docker-compose files to run a jupyter-ser
 You need to set a token for the jupyter server. You can do this by setting the `JUPYTER_TOKEN` environment variable in a .env file.
 
 ```
-JUPYTER_TOKEN=S3cr3tT0k3n
+JUPYTER_TOKEN=<your token>
 ```
 
 ## Run the server
